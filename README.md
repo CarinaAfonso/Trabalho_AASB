@@ -24,8 +24,7 @@ De modo a guardar todas as sequências, inclusive informações sobre esta, cria
                              {'id_seq': {'seq': MySeq(), 'id' : [bd, id_seq], 'input': input_seq}
                              
 Optou-se por colocar um id interno ('id_seq'), para todas as seqências, e caso exista também o id externo ('id' : [bd, id_seq] ).
-Uma vez que o programa permite a introdução de sequências de modo manual, assim como automático (através de ficheiros ou NCBI), guardamos o tipo de input realizado no dicionário ('input': input_seq)
 
+Uma vez que o programa permite a introdução de sequências de modo manual, assim como automático (através de ficheiros ou NCBI), guardamos o tipo de input realizado no dicionário ('input': input_seq).
 
-
-para encontrar a sequencia mais semelhante foi feito o comando aplicando alinhamento múltiplo e não blats => menos eficiente mas mais preciso
+Na realização do comando que encontra a sequência mais semelhante (comando 5. no Menu) em vez da realização de um Blast, optou-se por um alinhamento múltipo. Esta escolha foi feita com base no facto do alinamento múltiplo, apesar de menos eficiente ser mais preciso.
