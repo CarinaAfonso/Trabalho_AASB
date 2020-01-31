@@ -20,7 +20,12 @@ Este trabalho foi realizado no âmbito da unidade curricular Algoritmos para An�
            12. Alterações pós-tradução
            
 
-optamos por guardar se o input da sequencia é manual ou atomatico
-guardar as sequencias com um id interno e guardar também o externo(se existir)
+De modo a guardar todas as sequências, inclusive informações sobre esta, criamos um dicionário que segue a seguinte orientação: 
+                             {'id_seq': {'seq': MySeq(), 'id' : [bd, id_seq], 'input': input_seq}
+                             
+Optou-se por colocar um id interno ('id_seq'), para todas as seqências, e caso exista também o id externo ('id' : [bd, id_seq] ).
+Uma vez que o programa permite a introdução de sequências de modo manual, assim como automático (através de ficheiros ou NCBI), guardamos o tipo de input realizado no dicionário ('input': input_seq)
+
+
 
 para encontrar a sequencia mais semelhante foi feito o comando aplicando alinhamento múltiplo e não blats => menos eficiente mas mais preciso
