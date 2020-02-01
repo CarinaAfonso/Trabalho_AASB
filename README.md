@@ -28,3 +28,7 @@ Optou-se por colocar um id interno ('id_seq'), para todas as seqências, e caso 
 Uma vez que o programa permite a introdução de sequências de modo manual, assim como automático (através de ficheiros ou NCBI), guardamos o tipo de input realizado no dicionário ('input': input_seq).
 
 Na realização do comando que encontra a sequência mais semelhante (comando 5. no Menu) em vez da realização de um Blast, optou-se por um alinhamento múltipo. Esta escolha foi feita com base no facto do alinamento múltiplo, apesar de menos eficiente ser mais preciso.
+
+Não foi possível a implementação de um processo de alinhamento múltiplo, assim como a procura de possíveis alterações pós-tradução nas sequências de proteínas, recorrendo a algoritmos/ programas externos. 
+
+Os métodos relativos ao blast e construção da árvore, através de algoritmos externos, apresentam erros.
