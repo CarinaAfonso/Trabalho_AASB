@@ -29,6 +29,6 @@ Uma vez que o programa permite a introdução de sequências de modo manual, ass
 
 Na realização do comando que encontra a sequência mais semelhante (comando 5. no Menu) em vez da realização de um Blast, optou-se por um alinhamento múltipo. Esta escolha foi feita com base no facto do alinamento múltiplo, apesar de menos eficiente ser mais preciso.
 
-Não foi possível a implementação de um processo de alinhamento múltiplo, assim como a procura de possíveis alterações pós-tradução nas sequências de proteínas, recorrendo a algoritmos/ programas externos. 
+Não foi possível a implementação da procura de possíveis alterações pós-tradução nas sequências de proteínas, recorrendo a algoritmos/ programas externos.
 
-Os métodos relativos ao blast e construção da árvore, através de algoritmos externos, apresentam erros.
+Para o método de alinhamento múltiplo, ao fazer a construçao da árvore usando o Clustal, o programa guarda automaticamente um ficheiro com os alinhamentos.
