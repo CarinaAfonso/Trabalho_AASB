@@ -60,7 +60,7 @@ class SbmSHELL_10(Cmd):
             if int(id_gestor) == -1:
                 break
             else:
-                ids_seqs.append(int(id_gestor))
+                ids_seqs.append(id_gestor)
         return ids_seqs
     
     def __set_parameters__(self):

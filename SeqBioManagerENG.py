@@ -572,7 +572,7 @@ class SeqBioManagerENG:
         arv = up.run()
         return arv
     
-    def write_fasta(self, ids_seqs, file_name = 'Tree_seqs.fasta'):
+    def write_fasta(self, ids_seqs, file_name = 'All_seqs.fasta'):
         '''
         Escreve sequências do gestor num ficheiro fasta
         :param ids_seqs: lista com os ids
@@ -589,8 +589,8 @@ class SeqBioManagerENG:
         Função que constrói a árvore filogenética com todas as sequências do 
         gestor com auxilio do programa ClustalW 
         '''
-        self.write_fasta(ids_seqs, file_name = 'Tree_seqs.fasta')
-        cmdline=ClustalwCommandline('clustalw2', infile = 'Tree_seqs.fasta')
+        self.write_fasta(ids_seqs, file_name = 'All_seqs.fasta')
+        cmdline=ClustalwCommandline('clustalw2', infile = 'All_seqs.fasta')
         cmdline()
         tree = Phylo.read('All_seqs.dnd', 'newick')
         Phylo.draw_ascii(tree)
